@@ -4,8 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <!-- fonts -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+<!-- style -->
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
-    
+   <header> 
+        <div class="container">
+            <div class="header-container">
+                <nav class="header-nav">
+                <a href="./index.html"> <img src="images/logo.svg" alt="logo" /> 
+                </a>
+                    <ul class="header-menu">
+                        <li> <a href="#traditions-section" target="_blank" class="link"> Traditions </a> </li> 
+                        <li> <a href="#cookers-section" target="_blank"class="link">Chefs</a></li>
+                        <li> <a href="#formats-section" target="_blank"class="link">Formats</a></li>
+                        <li> <a href="#contact-section" target="_blank"class="link">Contacts</a></li>
+                    </ul>
+                </nav>
+                    <button class="button" type="button">Request a call</button>
+            </div>
+        </div>
+   </header> 
+   <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
+            </div>
+        </section>
+
+        <section class="advantages-section">
+            <div class="container">
+                <h2 class="hidden"> Our advantages</h2>
+             <ul class="advantages-list">
+                <li class="advantages-item">High market demand</li>
+                <li class="advantages-item">Affordable formats</li>
+                <li class="advantages-item">Experienced management team</li>
+            </ul>
+            </div>
+        </section>
+        <section class="traditions-section section" id="traditions-section">
+            <div class="container">
+               <div class="traditions-container">
+                    <div class="traditions-content">
+                    <h2 class="traditions-title section-title">New format of traditions</h2>
+                    <p class="tradition-text"> <span class="uppercase">shop bakery</span> is a bakery that has taken all the best and preserved the taste of traditional pastries and the naturalness of the ingredients.</p>
+                    <p class="tradition-text">We work like the most famous chains -  <span class="lowercase"> 5 minutes and the order is ready.</span> And our bakeries have stylish design and high quality service!</p>
+                    </div>
+                    <img src="images/baker-man.jpg" alt="baker-man with pastry">
+               </div> 
+            </div>
+
+        </section>
+
+        <section class="section" id="cookers-section">
+            <div class="container">
+                <h2 class="chefs-title section-title centered">Our best <span class="accent"> chefs </span></h2>
+            <ul class="chefs-list">
+                <li class="chefs-item">
+                     <article class="chef-card">
+                        <img class="chef-photo" src="./images/nastya-chef.jpg" alt="nastya-chef">
+                     <div>
+                        <h3 class="chef-title"> Olga</h3>
+                        <div class="chef-text">
+                        <p class="chef-text">Hello, I'm Nastya!</p>
+                        <p class="chef-text">For 10 years, I've been bringing interesting and delicious ideas to life. </p>
+                        <p class="chef-text">I'll bake the most delicious products for you!</p>
+                        </div>
+                    </div>
+                    </article>
+                </li>
+                <li class="chefs-item">
+                    <article class="chef-card">
+                        <img class="chef-photo" src="./images/vlad-chef.jpg" alt="vlad-chef">
+                        <div>
+                         <h3 class="chef-title">Vlad</h3>
+                         <p class="chef-text">Hi, I'm Vlad! </p>
+                         <p class="chef-text">I have been a pastry chef for 18 years. SHOP BEKERY is our love, which we share with you every time through our pastries!</p>
+                         <p class="chef-text">I will make a unique filling for you for any taste!</p>
+                        </div>
+                        </article>
+                </li>
+            </ul>
+            </div>
+
+        </section>
+
+        <section class="section" id="formats-section"> 
+           <div class="container">
+                    <h2 class="formats-title section-title centered">Formats</h2>
+                    <div class="formats-container">
+                        <button class="carousel-button" type="button">
+                            <svg class="carousel-arrow" width="16" height="16" >
+                                <use href="./images/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="formats-list">
+                            <li class="format-item">
+                                <article class="format-card">
+                                    <div class="format-text">
+                                        <h3 class="format-title">Walrus</h3>
+                                        <p>Area up to 120m2</p>
+                                        <p>Menu: expanded menu</p>
+                                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 waiters-handymen</p>
+                                    <p>Seating: yes</p>
+                                    </div>
+                            
+                                </article>
+                            </li>
+                            <li class="format-item">
+                                <article class="format-card">
+                                    <h3 class="format-title">Horseshoe</h3>
+                                    <div class="format-text">
+                                        <p>Area up to 120m2</p>
+                                        <p>Menu: expanded menu</p>
+                                        <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 waiters-handymen</p>
+                                        <p>Seating: yes</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="format-item">
+                                <article class="format-card">
+                                <h3 class="format-title">handlebar</h3>
+                                    <div class="format-text">
+                                        <p>Area up to 120m2</p>
+                                        <p>Menu: expanded menu</p>
+                                        <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 waiters-handymen</p>
+                                        <p>Seating: yes</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <button class="carousel-button" type="button">
+                            <svg style="rotate: 180deg;" class="carousel-arrow" width="16" height="16"  >
+                                <use href="./images/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            </div>
+        </section>
+
+        <section class="contact-section section" id="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-forma">
+                        <h2 class="contact-title section-title">Join the bakery network</h2>
+                        <p>Fill out the form so we can contact you!</p>
+                    </div>
+                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sie!4v1759751446271!5m2!1suk!2sie"
+                    width="603" 
+                    height="595" 
+                    allowfullscreen=""
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    
+                </div>
+            </div>
+        </section>
+   </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer-logo">
+                    <a href="./index.html"> <img src="images/logo.svg" alt="logo" /> 
+                    </a>
+                    </div>
+                <ul class="footer-menu">
+                    <li> <a href="#traditions-section" target="_blank"class="link"> Traditions </a> </li> 
+                    <li><a href="#cookers-section" target="_blank"class="link">Chefs</a></li>
+                    <li><a href="#formats-section" target="_blank"class="link">Formats</a></li>
+                    <li><a href="#contact-section" target="_blank"class="link">Contacts</a></li>
+                </ul>
+                </nav>
+                <address class="footer-adress">
+                    <ul class="adress-list">
+                        <li> <a class="adress-link" href="tel:380960000007">+ 38 (096) 000 00 07</a></li>
+                        <li> <a class="adress-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+                        <li> <a class="adress-link" href="https://maps.app.goo.gl/wx9oWZukNnN8L6KLA" target="_blank">
+                            Ukraine, Kyiv, Sichovykh Striltsiv St. 54</a></li>
+                            <li><a href="">
+                                <svg class="footer-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                                
+                            </li>
+                            <li><a href="">
+                                <svg class="footer-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                    </ul>
+                        <div class="adress-info">
+                            <a class="adress-link" href=""target="_blank">Privacy Policy</a>
+                            <p class="adress-copyright"> © 2023 Data protected</p>
+                        </div>
+                </address>           
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,13 @@
+*{box-sizing: border-box;}
+
+.flex-container {
+    display: flex
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 171, 44);
+    padding: 10px;
+    border: 6px,solid, rgba(125, 0, 0, 0.829);
+    margin: 18px;
+    }
