@@ -16,7 +16,7 @@
 
 </head>
 <body>
-   <header> 
+   <header class="header"> 
         <div class="container">
             <div class="header-container">
                 <nav class="header-nav">
@@ -74,7 +74,7 @@
                      <div>
                         <h3 class="chef-title"> Olga</h3>
                         <div class="chef-text">
-                        <p class="chef-text">Hello, I'm Nastya!</p>
+                        <p class="chef-text">Hello, I'm Olga!</p>
                         <p class="chef-text">For 10 years, I've been bringing interesting and delicious ideas to life. </p>
                         <p class="chef-text">I'll bake the most delicious products for you!</p>
                         </div>
@@ -132,7 +132,7 @@
                             </li>
                             <li class="format-item">
                                 <article class="format-card">
-                                <h3 class="format-title">handlebar</h3>
+                                <h3 class="format-title">Handlebar</h3>
                                     <div class="format-text">
                                         <p>Area up to 120m2</p>
                                         <p>Menu: expanded menu</p>
@@ -157,6 +157,22 @@
                     <div class="contact-forma">
                         <h2 class="contact-title section-title">Join the bakery network</h2>
                         <p>Fill out the form so we can contact you!</p>
+                     <form name="modal-form" autocomplete="off" >   
+        <div class="form-field">
+            <label class ="form-label visually-hidden" for="user-name"> Your name</label>
+            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name" required minlength="2" maxlength="20"/>
+        </div>
+        <div class="form-field">
+            <label class ="form-label visually-hidden" for="user-tel"> Telephone</label>
+            <input class="form-input" type="tel" id="user-tel" name="user-tel"placeholder="Telephone" required pattern="^\+[0-9]{12}"/>
+        </div>
+        <div class="form-field">
+            <label class ="form-label visually-hidden" for="user-email"> Email</label>
+            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email" required/>
+        </div>
+        <button class="form-button button" type="submit"> Order a call</button>
+        <p class="form-terms">By clicking the button I agree to the <a class="form-terms-link" href="£"> privacy policy</a></p>
+    </form> 
                     </div>
                     <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sie!4v1759751446271!5m2!1suk!2sie"
                     width="603" 
@@ -219,7 +235,24 @@
 <div class="backdrop">
     <div class="modal"> 
         <button class="modal-btn-close" type="button"> Close </button>
-             
+        <h2>Order a call</h2>
+        <p>Leave a request and our specialist will contact you!</p>
+    <form name="contact-form" autocomplete="off" novalidate>   
+        <div class="form-field">
+            <label class ="form-label visually-hidden" for="user-name"> Your name</label>
+            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name"/>
+        </div>
+        <div class="form-field">
+            <label class ="form-label visually-hidden" for="user-tel"> Telephone</label>
+            <input class="form-input" type="tel" id="user-tel" name="user-tel"placeholder="Telephone"/>
+        </div>
+        <div class="form-field">
+            <label class ="form-label visually-hidden" for="user-email"> Email</label>
+            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email"/>
+        </div>
+        <button class="form-button button" type="submit"> Order a call</button>
+        <p class="form-terms">By clicking the button I agree to the <a class="form-terms-link" href="£"> privacy policy</a></p>
+    </form> 
     </div>
 </div>
 <script src="./js/modal.js"></script>

@@ -45,6 +45,12 @@ ul {list-style-type: none;
     padding: 0;
     margin: 0;}
 
+.visually-hidden {position: absolute; 
+  width: 1px; height: 1px;
+  overflow: hidden;  
+  left: -10000px;
+  top:auto} 
+
 body {
     color: var(--color-primery-dark);
     font-family: "Poppins", sans-serif;
@@ -75,10 +81,19 @@ address
 .button:hover {background-color: transparent;color: var(--color-brand-dark);cursor: pointer; }
 
 /* link */
-.link {color: var(--color-primery-light); line-height: 1.5;text-decoration: none;}
+.link {color: var(--color-primery-light); 
+  line-height: 1.5;text-decoration: none;
+transition: color 0.3s;}
 .link:hover {color:var(--color-brand);}
 
+
 /* header */
+.header { position: absolute;
+top: 0;
+left: 0;
+padding-top: 32px;
+width: 100%;
+}
 .header-container {display: flex;align-items: center; gap: 40px;}
 .header-nav {display: flex; flex-grow: 1; align-items: center;gap: 40px;}
 .header-menu {display: flex; gap: 64px;flex-grow: 1; justify-content: center;}
@@ -90,7 +105,10 @@ address
 
 .section-title {color: var(--primery-dark);}
 
-.hero-section {padding: 272px 0; background-image: url(./images/hero-section-background.jpg); background-repeat: no-repeat; background-position: center top; background-size:cover ;}
+.hero-section {padding: 272px 0; background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%
+2.03%
+, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(./images/hero-section-background.jpg); background-repeat: no-repeat; background-position: center top; background-size:cover ;
+}
 
 
 /* advantages-section */
@@ -153,12 +171,17 @@ box-shadow:  -16px 16px 0 0 var(--color-primery-light), -16px 16px 0 2px var(--c
 .format-text {font-size: 14px;font-weight: 300;}
 .format-card { height: 444px;
   border: 1px solid lightblue;
+    border-radius: 16px;
    padding: 24px ;
    background-image: linear-gradient(
     180deg, 
     rgba(49,38,26,0) 55.21%, 
     rgba(49, 38, 26, 0.71) 72.92%, 
-    var(--color-primery-dark) 100%) ;}  /* remove */
+    var(--color-primery-dark) 100%);
+    transition: transform 0.3s;
+
+  }  /* remove */
+.format-card:hover {transform: scale(1.05);}
 .formats-list {display: flex; gap:20px ;}
 .format-item {flex-basis: calc((100% - 40px) / 3);}
 
@@ -241,15 +264,44 @@ position: relative;}
         display: flex; 
         align-items: center; 
         justify-content: center;
+        padding: 20px 0;
+        transition: opacity 0.3s; visibility: 0.3s;
         }
     .backdrop.is-hidden {display: none;}
     
-    .modal {width: 700px;
-      height: 600px;
+    .modal {width: 100%; max-width: 880px;
+      height: 100%; max-height: 880px;
       background-color: var(--color-primery-light);
       border-radius: 32px;
-      position: relative;}
+      position: relative;
+    padding: 128px;}
     .modal-btn-close {position: absolute;
       top: 40px;
-      right: 40px;}
+      right: 40px;
+    overflow-y: auto;}
+
+      /* form */
+      .form-field { margin-bottom: 32px;}
+      .form-input {padding: 16px 42px;
+      font-size: 16px;
+      line-height: 1.17;
+      width: 100%;
+      border: 1px solid var(--color-secondary-dark);
+      border-radius: 8px;
+    background-color: transparent;}
+    .form-input:focus {border-color: var(--color-brand);
+    outline: none;}
+    .form-input::placeholder {color: var(--color-secondary-dark);
+    font-size: 16px;line-height: 1.17;}
+    .form-input:focus::placeholder {color: var(--color-brand-dark);}
+    .form-label {display: block; top: 16px; left: 42px;}
+    .form-button {display: block; margin:0 auto 24px;}
+    .form-terms {font-weight: 500; font-size: 12px; 
+      line-height: 1.5; 
+      text-align: center; 
+      color: var(--color-primery-dark);
+    max-width: 220px;
+  margin: 0 auto;}
+  .form-terms-link {color: var(--color-primery-dark);
+  text-underline-offset: 2px;}
     
